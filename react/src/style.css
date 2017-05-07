@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font: 16px 'Montserrat', verdana, sans-serif;
+  text-align: center;
+  background-color: #F8F8F8;
+}
+
+main {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none;
+}
+
+main .steps > header {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 20px;
+}
+
+main .steps > header h1 {
+  color: #16a085;
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+#stage {
+  background-color: #FFF;
+  margin-bottom: 20px;
+}
+
+#stage .row {
+  text-align: center;
+  display: flex;
+  border: 1px solid #CCC;
+}
+
+#stage .row:not(:last-child) {
+  border-bottom: 0;
+}
+
+#stage .row .col {
+  width: calc(33.33% - 2px);
+  height: 150px;
+  line-height: 150px;
+  font-size: 2.2em;
+  border-left: 1px solid #CCC;
+}
+
+#stage .row .col:first-child {
+  border-left: none;
+}
+
+/* Primeiro passo:
+ * ====================================== */
+section.steps:first-child {
+  
+}
+
+section.steps input[type=text] {
+  width:100%;
+  font:1.2em 'Montserrat', verdana, sans-serif;
+  text-transform: uppercase;
+  display: block;
+  padding:15px;
+  background: #FFF;
+  margin-bottom: 15px;
+  border:0;
+  border-radius: 6px;
+}
+
+section.steps .input-group {
+  margin-bottom: 40px;
+}
+
+section.steps button {
+  height: 42px;
+  line-height: 42px;
+  color: #FFF;
+  font:1.2em 'Montserrat', verdana, sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding:0 20px;
+  border:none;
+  border-radius: 5px;
+  background-color: #2ecc71;
+}

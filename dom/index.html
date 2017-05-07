@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jogo da velha</title>
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <main>
+      <section id="first-step" class="steps hide">
+        <header>
+          <h1>Jogo da Velha (JS puro)</h1>
+          <p>Informe os nomes dos jogadores:</p>
+        </header>
+
+        <div class="input-group">
+          <input type="text" name="player1" placeholder="Jogador 1">
+          <input type="text" name="player2" placeholder="Jogador 2">
+        </div>
+        <button type="button" id="next-step">Iniciar o jogo</button>
+      </section>
+
+      <section id="last-step" class="steps hide">
+        <header>
+          <h1>Jogo da Velha</h1>
+          <p>Jogador da vez: <span id="current-player"></span> </p>
+        </header>
+        <div id="stage">
+          <div class="row" data-index="0">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+          <div class="row" data-index="1">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+          <div class="row" data-index="2">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+        <footer>
+          <button type="button" id="reset">Reiniciar</button>
+        </footer>  
+      </section>
+      <script type="text/javascript" src="script.js"></script>
+    </main>
+  </body>
+</html>
